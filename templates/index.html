@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Room</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('static/images/bg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+        .container {
+            position: relative; /* Position relative to its containing block */
+            top: 50%; /* Move the top edge of the element halfway down the viewport */
+            transform: translateY(80%); /* Move the element's center back up by half of its own height */
+            max-width: 600px;
+            margin: 0px auto;
+            padding: 20px;
+            height: 150px; /* Adjust this value as needed */
+        }
+        h2 {
+            margin: -5px -5px 0px -5px;
+            color: black;
+        }
+        #title {
+            border: 2px solid black;
+            padding: 5px 50px 5px 50px;
+            margin: 20px;
+            display: inline-block;
+        }
+        #wide {
+            margin-left: 10px;
+            letter-spacing: 0.5em;
+        }
+        #small {
+            font-size: 0.8em;
+            margin-top: -15px;
+            margin-bottom: -15px;
+
+        }
+        .advice {
+            font-style: italic;
+            font-size: 1.8em;
+            color: #444;
+        }
+        
+        .fade-in {
+            -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        }
+        @-webkit-keyframes fade-in {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+        }
+        @keyframes fade-in {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+        }
+
+        .fade-out {
+            -webkit-animation: fade-out 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            animation: fade-out 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        }
+        @-webkit-keyframes fade-out {
+            0% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+        }
+        @keyframes fade-out {
+            0% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id=title>
+        <h1 id="wide">ADVICES</h1>
+        <h2 id="small">FROM THE</h2>
+        <h1>SERVER ROOM</h1>
+    </div>
+    <div class="container">
+        <div id="text">
+            <h2 id="rand_id"></h2>
+            <p class="advice" id="advice"></p>
+        </div>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
