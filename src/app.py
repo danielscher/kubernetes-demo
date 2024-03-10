@@ -28,7 +28,7 @@ def get_rand_advice(advices):
 @app.route("/")
 def index():
     message = "Tip #" + str(gen_rand_number())
-    load_cpu()
+    # load_cpu()
     advice = get_rand_advice(advices)
     return render_template("index.html",message=message,advice=advice)
 
