@@ -1,7 +1,7 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: my-deployment
+  name: auto-scaler
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
@@ -18,4 +18,4 @@ spec:
         averageUtilization: 90
   behavior:
     scaleDown:
-      stabilizationWindowSeconds: 30
+      stabilizationWindowSeconds: 10
